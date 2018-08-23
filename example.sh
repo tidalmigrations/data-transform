@@ -19,6 +19,6 @@ tidal get vsphere | ./scripts/vsphere_transform.rb | tidal sync servers
 
 # Load up app and see the newly syncd vsphere data
 
-./scripts/vsphere_transform.rb < data/vcenter.json
+./scripts/csv_transform.rb < data/apps.csv | tidal sync apps
 
 # Load up app and see sync apps
