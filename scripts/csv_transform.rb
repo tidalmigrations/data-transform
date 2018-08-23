@@ -29,12 +29,3 @@ output = transform data
 # Output data in pretty json format
 puts JSON.pretty_generate(output)
 
-# TODO do we need this?
-# given a string will return true or false
-def to_boolean(str)
-  if %w/true yes/.include? str
-    true
-  else
-    false
-  end
-end
