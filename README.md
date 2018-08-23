@@ -3,12 +3,12 @@
 This is a collection of scripts and sample data used to transform data from and
 into different structres and formats.
 
-## data Directory
+## data
 
 This directory has a set of example data, there is nothing particular about
 these examples, except that they work well the scripts in this repository.
 
-## scripts Directory
+## scripts
 
 This directory contains a set of example scripts that transform data, in this
 case from the `data` directory, into JSON format that
@@ -16,6 +16,8 @@ case from the `data` directory, into JSON format that
 
 
 ## Examples
+
+You can checkout `example.sh` for a quick set of commands to get you started.
 
 An example command would be:
 
@@ -35,6 +37,7 @@ or
 Which reads the data from the file, transforms it and displays it for you to
 inspect. Optionally you can use [jq](https://stedolan.github.io/jq/) to pretty
 print the JSON data.
+
 
 ## Questions or Help
 
