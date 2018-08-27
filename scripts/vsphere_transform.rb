@@ -25,8 +25,14 @@ def transform(input)
 
     data[:servers].push props
   end
-  puts JSON.generate data
+  data
 end
 
+# Read in data from STDIN
 data = STDIN.read
-transform data
+
+# Transform data
+output = transform data
+
+# Output transformed data to STDOUT
+puts JSON.generate output
