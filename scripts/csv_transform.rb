@@ -15,6 +15,8 @@ def transform(input)
     props[:servers] = row[:hosts].split(',').map {|h| {host_name: h.strip}}
     props[:datatbase_instances] = row[:dbs].split(',').map {|h| {name: h.strip}}
     props[:environment] = row[:env]
+    puts row
+    props[:custom_fields] = {"Data sensitivity" => row[:data_sensitivity]}
     data[:apps].push props
   end
   data
