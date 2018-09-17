@@ -7,6 +7,7 @@ curl https://get.tidal.sh/unix | bash
 # Get credentials for both Tidal and vSphere
 
 tidal login
+tidal login vsphere
 
 # Load up app at your_domain.tidalmg.com and see the server inventory
 
